@@ -13,9 +13,9 @@
 				  &\textit{Wyrwas, Piotr}
 	\end{align*} \\[3\baselineskip]
 \begin{tikzpicture}
-   	\draw[domain=-5:5,samples=500,variable=\x,shift={(0,0)}, draw=cyan] plot ({\x}, {sin((12 * \x) r + 0.4 r)*exp(-0.2*\x*\x)*0.5});
-	\draw[domain=-5:5,samples=500,variable=\x,shift={(0,0)}, draw=cyan] plot ({\x}, {sin((12 * \x) r + 0.8 r)*exp(-0.2*\x*\x)*0.5});
-	\draw[domain=-5:5,samples=500,variable=\x,shift={(0,0)}, draw=cyan] plot ({\x}, {sin((12 * \x) r)*exp(-0.2*\x*\x)*0.5});
+	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=NavyBlue] plot ({\x}, {sin((12 * \x) r + 0.4 r)*exp(-0.15*\x*\x)*0.5});
+	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=NavyBlue] plot ({\x}, {sin((12 * \x) r + 0.8 r)*exp(-0.15*\x*\x)*0.5});
+	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=NavyBlue] plot ({\x}, {sin((12 * \x) r)*exp(-0.15*\x*\x)*0.5});
 \end{tikzpicture}
 \end{center}
 \vspace*{\fill}
