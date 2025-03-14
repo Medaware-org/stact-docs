@@ -1,8 +1,9 @@
 \vspace*{\fill}
 \begin{tikzpicture}
-	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=CadetBlue!50] plot ({\x}, {sin((4 * \x) r) * 0.5});
-	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=CadetBlue!50] plot ({\x}, {sin((4 * \x) r - (pi/4) r) * 0.5});	
-	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=CadetBlue!50] plot ({\x}, {sin((4 * \x) r - (pi/2) r) * 0.5});
+	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!25] plot ({\x}, {sin((\ornamentfreq * \x) r - (pi/4) r) * 0.5});
+	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!50] plot ({\x}, {sin((\ornamentfreq * \x) r) * 0.5});
+	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!75] plot ({\x}, {sin((\ornamentfreq * \x) r + (pi/4) r) * 0.5});	
+	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!100] plot ({\x}, {sin((\ornamentfreq * \x) r + (pi/2) r) * 0.5});
 \end{tikzpicture}
 \vspace*{\fill}
 \begin{center}
@@ -20,11 +21,14 @@
 	\end{align*}
 \end{center}
 \vspace*{\fill}
-\hspace*{\fill}
-\begin{tikzpicture}
-	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=CadetBlue!50] plot ({\x}, {sin((4 * \x) r) * 0.5});
-	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=CadetBlue!50] plot ({\x}, {sin((4 * \x) r - (pi/4) r) * 0.5});
-	\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=CadetBlue!50] plot ({\x}, {sin((4 * \x) r - (pi/2) r) * 0.5});
-\end{tikzpicture}
+{
+	\hspace*{\fill}
+	\begin{tikzpicture}
+		\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!25] plot ({\x}, {sin((\ornamentfreq * \x) r - (pi/4) r) * 0.5});
+		\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!50] plot ({\x}, {sin((\ornamentfreq * \x) r) * 0.5});
+		\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!75] plot ({\x}, {sin((\ornamentfreq * \x) r + (pi/4) r) * 0.5});	
+		\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!100] plot ({\x}, {sin((\ornamentfreq * \x) r + (pi/2) r) * 0.5});
+	\end{tikzpicture}
+}
 \vspace*{\fill}
 \pagenumbering{arabic}
