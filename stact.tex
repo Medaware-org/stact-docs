@@ -5,13 +5,14 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tikz}
 
-\usepackage[a4paper, left=15mm, right=15mm, top=15mm, bottom=25mm]{geometry}
+\usepackage[a4paper, left=15mm, right=15mm, top=20mm, bottom=25mm]{geometry}
+
+\input{common.tex}
 
 \begin{document}
 	\pagenumbering{gobble}
 	\input{config.tex}
 	\include{pages/title}
 	\pagenumbering{arabic}
-	\tableofcontents
 	\include{pages/team}
 \end{document}

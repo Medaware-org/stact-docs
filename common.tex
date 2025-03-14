@@ -1,0 +1,11 @@
+\newcommand{\xsection}[1] {
+	\begin{center}
+		\section*{\Large #1}
+		\begin{tikzpicture}
+			\foreach \a in {1, ..., 4} {
+				\pgfmathsetmacro{\sinalpha}{25 * \a}
+				\draw[domain=-4:4,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!\sinalpha] plot ({\x}, {sin((5 * \x) r + (\a r)) * exp(-0.25*\x*\x) * 0.2});
+			}
+		\end{tikzpicture}
+	\end{center}
+}
