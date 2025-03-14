@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.7)  13 MAR 2025 21:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.7)  14 MAR 2025 08:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,28 +452,28 @@ File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
 (./stact.aux (./pages/title.aux) (./pages/intro.aux))
 \openout1 = `stact.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-0.
+2.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -514,21 +514,27 @@ LaTeX Font Info:    ... okay on input line 10.
 (./pages/title.tex) [1
 
 
+] (./stact.toc)
+\tf@toc=\write4
+\openout4 = `stact.toc'.
+
+ [2
+
+
 ]
 \openout2 = `pages/intro.aux'.
 
- (./pages/intro.tex) [1
+ (./pages/intro.tex) [3
 
-
-
-] (./stact.aux (./pages/title.aux) (./pages/intro.aux)) ) 
+] (./stact.aux
+(./pages/title.aux) (./pages/intro.aux)) ) 
 Here is how much of TeX's memory you used:
- 13880 strings out of 476683
- 287321 string characters out of 5804047
+ 13889 strings out of 476683
+ 287463 string characters out of 5804047
  1881018 words of memory out of 5000000
- 33908 multiletter control sequences out of 15000+600000
- 512821 words of font info for 44 fonts, out of 8000000 for 9000
+ 33912 multiletter control sequences out of 15000+600000
+ 512829 words of font info for 45 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  100i,10n,104p,395b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on stact.pdf (2 pages).
+Output written on stact.pdf (3 pages).
