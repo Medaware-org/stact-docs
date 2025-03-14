@@ -9,3 +9,12 @@
 		\end{tikzpicture}
 	\end{center}
 }
+
+\newcommand{\titleornament} {
+	\begin{tikzpicture}
+		\foreach \a in {1, ..., \ornamentnwaves} {
+			\pgfmathsetmacro{\sinalpha}{(100 / \ornamentnwaves) * \a}
+			\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!\sinalpha] plot ({\x}, {sin((\ornamentfreq * \x) r - ((\a * \ornamentphasedelta) r)) * 0.5});
+		}
+	\end{tikzpicture}
+}
