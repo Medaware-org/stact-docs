@@ -2,9 +2,10 @@
 	\begin{center}
 		\section*{\Large #1}
 		\begin{tikzpicture}
-			\foreach \a in {1, ..., 4} {
-				\pgfmathsetmacro{\sinalpha}{(\a / 4)}
-				\draw[domain=-4:4,samples=100,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor, opacity=\sinalpha] plot ({\x}, {sin((\sepfreq * \x) r + (\a r)) * exp(-0.25*\x*\x) * 0.2});
+			\foreach \a in {1, ..., \seqnwaves} {
+				\pgfmathsetmacro{\sinalpha}{(\a / \seqnwaves)}
+				\draw[domain=-4:4,samples=100,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor, opacity=\sinalpha]
+					plot ({\x}, {sin((\sepfreq * \x) r + ((\a * \seqphasedelta) r)) * exp(-0.25*\x*\x) * 0.2});
 			}
 		\end{tikzpicture}
 	\end{center}
@@ -14,7 +15,8 @@
 	\begin{tikzpicture}
 		\foreach \a in {1, ..., \ornamentnwaves} {
 			\pgfmathsetmacro{\sinalpha}{\a / \ornamentnwaves}
-			\draw[domain=-5:5,samples=100,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor, opacity=\sinalpha] plot ({\x}, {sin((\ornamentfreq * \x) r - ((\a * \ornamentphasedelta) r)) * 0.5});
+			\draw[domain=-5:5,samples=100,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor, opacity=\sinalpha]
+				plot ({\x}, {sin((\ornamentfreq * \x) r - ((\a * \ornamentphasedelta) r)) * 0.5});
 		}
 	\end{tikzpicture}
 }
