@@ -1,0 +1,10 @@
+\xsection{Technical Difficulties}
+During the development of the \textit{Medaware} Suite, we identified numerous technical challenges. Fortunately, due to
+our exceptional team, they were particularly easy to overcome.
+One such challenge was the lack of an easily-integrable \textit{WYSIWYG} editor for the creation and maintenance of
+articles on our platform. We worked around this issue by developing a custom solution, \textit{Tangential}, which is far more
+integrated into our system than what any pre-made package could ever allow.
+Another issue that ended up in the expansion of our technological stack was the issue of reliance on third-parties for image
+data; Our editor system, as well as the subsequent rendering pipeline, relies on external providers for fetching images
+for use in the articles on our platform. To avoid potential issues caused by possible down-time, we elected to cache said
+data in a \textit{MinIO} instance, which runs on the same server as the \textit{Catalyst} backend.
