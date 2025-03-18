@@ -13,6 +13,10 @@
 	\pagenumbering{gobble}
 	\input{config.tex}
 	\include{pages/title}
-	\pagenumbering{arabic}
-	\include{pages/team}
+	\begin{xvc}
+		\input{pages/team.tex}
+	\end{xvc}
+	\begin{xvc}
+		\input{pages/challenge.tex}
+	\end{xvc}
 \end{document}

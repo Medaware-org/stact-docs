@@ -3,8 +3,8 @@
 		\section*{\Large #1}
 		\begin{tikzpicture}
 			\foreach \a in {1, ..., 4} {
-				\pgfmathsetmacro{\sinalpha}{25 * \a}
-				\draw[domain=-4:4,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!\sinalpha] plot ({\x}, {sin((\sepfreq * \x) r + (\a r)) * exp(-0.25*\x*\x) * 0.2});
+				\pgfmathsetmacro{\sinalpha}{(\a / 4)}
+				\draw[domain=-4:4,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor, opacity=\sinalpha] plot ({\x}, {sin((\sepfreq * \x) r + (\a r)) * exp(-0.25*\x*\x) * 0.2});
 			}
 		\end{tikzpicture}
 	\end{center}
@@ -13,8 +13,12 @@
 \newcommand{\titleornament} {
 	\begin{tikzpicture}
 		\foreach \a in {1, ..., \ornamentnwaves} {
-			\pgfmathsetmacro{\sinalpha}{(100 / \ornamentnwaves) * \a}
-			\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor!\sinalpha] plot ({\x}, {sin((\ornamentfreq * \x) r - ((\a * \ornamentphasedelta) r)) * 0.5});
+			\pgfmathsetmacro{\sinalpha}{\a / \ornamentnwaves}
+			\draw[domain=-5:5,samples=600,variable=\x,smooth,shift={(0,0)}, draw=\ornamentcolor, opacity=\sinalpha] plot ({\x}, {sin((\ornamentfreq * \x) r - ((\a * \ornamentphasedelta) r)) * 0.5});
 		}
 	\end{tikzpicture}
 }
+
+\newenvironment{xvc}
+	{\vspace*{\fill}}
+	{\vspace*{\fill}\newpage}
