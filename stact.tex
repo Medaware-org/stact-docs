@@ -13,10 +13,6 @@
 	\pagenumbering{gobble}
 	\input{config.tex}
 	\include{pages/title}
-	\begin{xvc}
-		\input{pages/team.tex}
-	\end{xvc}
-	\begin{xvc}
-		\input{pages/challenge.tex}
-	\end{xvc}
+	\xpart{pages/team}
+	\xpart{pages/challenge}
 \end{document}
